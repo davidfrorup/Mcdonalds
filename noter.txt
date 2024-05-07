@@ -1,72 +1,77 @@
-Join()
-join()-metoden konverterer alle elementerne i et array til en streng og returnerer denne streng. Du kan specificere en separatorstreng, som vil blive indsat mellem hvert element i det resulterende array.
+## JavaScript Array Metoder
 
-Splice()
-splice()-metoden ændrer indholdet af et array ved at fjerne eller erstatte eksisterende elementer og/eller tilføje nye elementer på stedet.
+### Join()
+`join()`-metoden konverterer alle elementerne i et array til en streng og returnerer denne streng. Du kan specificere en separatorstreng, som vil blive indsat mellem hvert element i det resulterende array.
 
-Slice()
-slice()-metoden returnerer en kopi af et delarray af arrayet. Du kan specificere start- og slutpositioner for delarrayet.
+### Splice()
+`splice()`-metoden ændrer indholdet af et array ved at fjerne eller erstatte eksisterende elementer og/eller tilføje nye elementer på stedet.
 
-IndexOf()
-indexOf()-metoden returnerer det første indeks, hvor et givet element kan findes i arrayet, eller -1 hvis det ikke er til stede.
+### Slice()
+`slice()`-metoden returnerer en kopi af et delarray af arrayet. Du kan specificere start- og slutpositioner for delarrayet.
 
-Filter()
-filter()-metoden opretter et nyt array med alle elementer, der består af en test, der udføres af den angivne funktion.
+### IndexOf()
+`indexOf()`-metoden returnerer det første indeks, hvor et givet element kan findes i arrayet, eller -1 hvis det ikke er til stede.
 
-Map()
-map()-metoden opretter et nyt array med resultaterne af at kalde en funktion for hvert element i arrayet.
+### Filter()
+`filter()`-metoden opretter et nyt array med alle elementer, der består af en test, der udføres af den angivne funktion.
 
-Pop()
-pop()-metoden fjerner det sidste element fra et array og returnerer dette element.
+### Map()
+`map()`-metoden opretter et nyt array med resultaterne af at kalde en funktion for hvert element i arrayet.
 
-Push()
-push()-metoden tilføjer et eller flere elementer til slutningen af et array og returnerer den nye længde af arrayet.
+### Pop()
+`pop()`-metoden fjerner det sidste element fra et array og returnerer dette element.
 
-Shift()
-shift()-metoden fjerner det første element fra et array og returnerer dette element. Alle efterfølgende elementer i arrayet får et nyt indeks (minus én).
+### Push()
+`push()`-metoden tilføjer et eller flere elementer til slutningen af et array og returnerer den nye længde af arrayet.
 
-UnShift()
-unshift()-metoden tilføjer et eller flere elementer til starten af et array og returnerer den nye længde af arrayet.
+### Shift()
+`shift()`-metoden fjerner det første element fra et array og returnerer dette element. Alle efterfølgende elementer i arrayet får et nyt indeks (minus én).
 
-Concat()
-concat()-metoden returnerer et nyt array bestående af det oprindelige array med et eller flere andre arrays eller værdier tilføjet til det.
+### UnShift()
+`unshift()`-metoden tilføjer et eller flere elementer til starten af et array og returnerer den nye længde af arrayet.
 
-LastIndexOf()
-lastIndexOf()-metoden returnerer det sidste indeks, hvor et givet element kan findes i arrayet, eller -1 hvis det ikke er til stede. Søgningen starter fra det sidste element og går baglæns.
+### Concat()
+`concat()`-metoden returnerer et nyt array bestående af det oprindelige array med et eller flere andre arrays eller værdier tilføjet til det.
 
-ForEach()
-forEach()-metoden udfører en given funktion en gang for hvert element i arrayet.
+### LastIndexOf()
+`lastIndexOf()`-metoden returnerer det sidste indeks, hvor et givet element kan findes i arrayet, eller -1 hvis det ikke er til stede. Søgningen starter fra det sidste element og går baglæns.
 
-Reduce()
-reduce()-metoden anvender en funktion til at akkumulere værdierne i arrayet og returnerer et enkelt resultat.
+### ForEach()
+`forEach()`-metoden udfører en given funktion en gang for hvert element i arrayet.
 
-Some()
-some()-metoden returnerer true, hvis mindst ét element i arrayet består af den givne testfunktion, ellers returnerer den false.
+### Reduce()
+`reduce()`-metoden anvender en funktion til at akkumulere værdierne i arrayet og returnerer et enkelt resultat.
 
-Every()
-every()-metoden returnerer true, hvis alle elementer i arrayet består af den givne testfunktion, ellers returnerer den false.
+### Some()
+`some()`-metoden returnerer true, hvis mindst ét element i arrayet består af den givne testfunktion, ellers returnerer den false.
 
-Flat()
-flat()-metoden returnerer et nyt array med alle under-arrays, der er rekursivt fjernet til en specificeret dybde.
+### Every()
+`every()`-metoden returnerer true, hvis alle elementer i arrayet består af den givne testfunktion, ellers returnerer den false.
 
-Find()
-find()-metoden returnerer værdien af det første element i arrayet, der opfylder den angivne testfunktion. Ellers returnerer den undefined.
+### Flat()
+`flat()`-metoden returnerer et nyt array med alle under-arrays, der er rekursivt fjernet til en specificeret dybde.
 
-FindIndex()
-findIndex()-metoden returnerer indekset for det første element i arrayet, der opfylder den angivne testfunktion. Ellers returnerer den -1.
+### Find()
+`find()`-metoden returnerer værdien af det første element i arrayet, der opfylder den angivne testfunktion. Ellers returnerer den undefined.
 
-Sort()
-sort()-metoden sorterer elementerne i et array i stedet for at oprette et nyt array. Sorteringen sker ved konvertering af elementerne til strenge og sammenligning af disse strenge ved hjælp af Unicode-kodepunktværdier.
+### FindIndex()
+`findIndex()`-metoden returnerer indekset for det første element i arrayet, der opfylder den angivne testfunktion. Ellers returnerer den -1.
 
-Brug af arrays og inputfelter:
+### Sort()
+`sort()`-metoden sorterer elementerne i et array i stedet for at oprette et nyt array. Sorteringen sker ved konvertering af elementerne til strenge og sammenligning af disse strenge ved hjælp af Unicode-kodepunktværdier.
+
+## Brug af Arrays og Inputfelter
+
 Arrays er datastrukturer, der tillader opbevaring af flere værdier i en enkelt variabel. De er nyttige, når du har brug for at arbejde med en samling af elementer, f.eks. en liste af navne, tal, eller objekter. Inputfelter, på den anden side, er HTML-elementer, der tillader brugere at indtaste data på en hjemmeside eller applikation, f.eks. tekstfelter, talindtastningsfelter eller rullemenuer.
 
 Brugen af arrays og inputfelter kan ofte være forbundet, især i webudvikling. For eksempel, når en bruger udfylder et formularfelt på en hjemmeside, kan værdierne af disse felter blive indsamlet og gemt i et array til senere behandling eller afsendelse til en server. På samme måde kan værdier fra et array blive brugt til at udfylde eller opdatere inputfelter på en hjemmeside.
 
-Brug af var, let og const keywords:
-var, let og const er nøgleord i JavaScript, der bruges til at erklære variabler, men de adskiller sig i deres omfang og anvendelsesområde:
+## Brug af var, let og const keywords
 
-var: Tidligere var dette det primære nøgleord til at erklære variabler i JavaScript. Variabler erklæret med var er funktionsskoped, hvilket betyder, at de kun er synlige inden for den funktion, de er deklareret i, eller hvis de er deklareret uden for en funktion, er de globale. Desuden tillader var variabler at blive deklareret flere gange i samme scope, hvilket kan føre til utilsigtede konflikter og fejl.
-let: Indført i ECMAScript 2015 (ES6), let erklærer variabler, der er blok-scoped, hvilket betyder, at de kun er synlige inden for den blok, de er deklareret i (fx en løkke eller en betingelsesblok). Variabler deklareret med let kan ikke blive gen-deklareret inden for samme scope.
-const: Ligeldes introduceret i ES6, const erklærer variabler, der også er blok-scoped ligesom let, men de har en vigtig forskel: En variabel deklareret med const skal initialiseres med en værdi, og denne værdi kan ikke ændres senere. Det betyder, at const-variabler er konstante, og forsøg på at tildele dem en ny værdi vil resultere i en fejl.
-I praksis bør du foretrække brugen af const for variabler, der ikke ændrer sig, medmindre du har brug for variabelværdier, der kan ændres, i hvilket tilfælde let bør anvendes. Brug af var bør undgås, da dens funktionsskoped natur kan føre til uventet adfærd i større kodebaser.
+`var`, `let`, og `const` er nøgleord i JavaScript, der bruges til at erklære variabler, men de adskiller sig i deres omfang og anvendelsesområde:
+
+- `var`: Tidligere var dette det primære nøgleord til at erklære variabler i JavaScript. Variabler erklæret med var er funktionsskoped, hvilket betyder, at de kun er synlige inden for den funktion, de er deklareret i, eller hvis de er deklareret uden for en funktion, er de globale. Desuden tillader var variabler at blive deklareret flere gange i samme scope, hvilket kan føre til utilsigtede konflikter og fejl.
+- `let`: Indført i ECMAScript 2015 (ES6), `let` erklærer variabler, der er blok-scoped, hvilket betyder, at de kun er synlige inden for den blok, de er deklareret i (fx en løkke eller en betingelsesblok). Variabler deklareret med let kan ikke blive gen-deklareret inden for samme scope.
+- `const`: Ligeledes introduceret i ES6, `const` erklærer variabler, der også er blok-scoped ligesom let, men de har en vigtig forskel: En variabel deklareret med const skal initialiseres med en værdi, og denne værdi kan ikke ændres senere. Det betyder, at const-variabler er konstante, og forsøg på at tildele dem en ny værdi vil resultere i en fejl.
+
+I praksis bør du foretrække brugen af `const` for variabler, der ikke ændrer sig, medmindre du har brug for variabelværdier, der kan ændres, i hvilket tilfælde `let` bør anvendes. Brug af `var` bør undgås, da dens funktionsskoped natur kan føre til uventet adfærd i større kodebaser.
