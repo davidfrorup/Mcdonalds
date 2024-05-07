@@ -1,0 +1,144 @@
+    body {
+        font-family: sans-serif;
+    }
+
+    #logo {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 350px; /* Juster størrelsen efter behov */
+        height: auto; /* Sørg for at billedet bevarer sin proportionale størrelse */
+        z-index: 999; /* Sørg for at billedet er foran andre elementer */
+    }
+
+#bestillings-område {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#menuer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu li::after {
+    content: attr(data-pris) " kr.";
+    margin-left: 10px;
+}
+
+#kurv {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#kurv-elementer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#ordre-liste {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+   /*  border: 1px solid #ccc; */
+}
+
+#ordre-elementer {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Tilføj stil til hver ordrelinje */
+#ordre-elementer li {
+   border-bottom: none;
+}
+
+#ordre-elementer li span {
+    flex-grow: 1;
+}
+
+#ordre-elementer li .remove-item {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}
+
+#ordre-elementer li.totalpris {
+    border-bottom: 1px solid #ccc; /* Tilføj streg under totalprisen */
+}
+
+.menu {
+    display: none;
+}
+.menu:first-child {
+    display: block;
+}
+
+.active {
+    background-color: #ccc;
+}
+
+.menu-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+#menu-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+#reset-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.remove-item {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}
+
+#bestillingsseddel {
+    /* Tilføj denne stilregel for at skjule luk-knappen */
+    display: none !important;
+}
